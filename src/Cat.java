@@ -7,7 +7,7 @@ public class Cat extends Animal {
     }
 
 
-    public int countCat() {
+    public static int getCount() {
         return countOfCat;
     }
 

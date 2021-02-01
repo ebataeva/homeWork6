@@ -9,8 +9,8 @@
  */
 public abstract class Animal {
 
-    public String name;
-    public int distance;
+    String name;
+    private int distance;
     static int countOfAnimals = 0;
 
     public Animal(String name) {
@@ -18,11 +18,10 @@ public abstract class Animal {
         this.countOfAnimals++;
     }
 
-    public int count() {
-        return this.countOfAnimals;
+    public static int getCount() {
+
+        return countOfAnimals;
     }
-
-
 
 
     abstract void run(int distance);

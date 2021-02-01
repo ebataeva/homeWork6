@@ -7,7 +7,7 @@ static int countOfDog;
         this.countOfDog++;
 
     }
-    public int countDog(){
+    public static int getCount(){
         return countOfDog;
     }
 
